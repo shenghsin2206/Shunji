@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <title>順記良品訂購網</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)), url('background.png') no-repeat center center fixed;
+            background-size: cover;
+        }
+        h1 { color: #d2691e; }
+        label { display: block; margin-top: 15px; }
+        input, textarea, select, button { width: 300px; padding: 8px; margin-top: 5px; }
+        button { background-color: #ffa726; color: white; border: none; cursor: pointer; }
+        button:hover { background-color: #fb8c00; }
+    </style>
+</head>
+<body>
+
+    <h1>順記良品訂購網</h1>
+    <p>請在此留下您的基本信息</p>
+
+    <form action="https://formspree.io/f/yourformid" method="POST">
+        <label for="name">姓名：</label>
+        <input type="text" id="name" name="姓名" required>
+
+        <label for="phone">電話：</label>
+        <input type="text" id="phone" name="電話" required>
+
+        <label for="address">地址：</label>
+        <textarea id="address" name="地址" required></textarea>
+
+        <label for="item">購買品項：</label>
+        <select id="item" name="購買品項" required>
+            <option value="">請選擇</option>
+            <option value="金煌" disabled>金煌（尚未開放）</option>
+            <option value="愛文" disabled>愛文（尚未開放）</option>
+            <option value="玉文">玉文</option>
+        </select>
+
+        <label for="spec">規格：</label>
+        <select id="spec" name="規格" required>
+            <option value="">請選擇</option>
+            <option value="10斤（大果6～9顆）">10斤（大果6～9顆）</option>
+            <option value="5斤（中果5～8顆）">5斤（中果5～8顆）</option>
+        </select>
+
+        <label for="quantity">訂購數量：</label>
+        <select id="quantity" name="訂購數量" required>
+            <option value="">請選擇</option>
+<option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option>
+            <option value="其他">其他（請填寫）</option>
+        </select>
+
+        <label for="other_quantity">若超過10箱，請填寫數量：</label>
+        <input type="text" id="other_quantity" name="其他數量">
+
+        <button type="submit">送出訂單</button>
+    </form>
+
+</body>
+</html>

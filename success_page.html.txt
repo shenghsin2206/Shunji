@@ -1,0 +1,23 @@
+
+
+
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <title>訂購完成</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; padding: 50px; background-color: #e8f5e9; }
+        h1 { color: #43a047; }
+        p { font-size: 18px; }
+    </style>
+</head>
+<body>
+
+    <h1>感謝您的訂購！</h1>
+    <p>請將款項匯至以下帳戶：</p>
+    <p><strong>銀行：123銀行<br>帳號：123-456-789012<br>戶名：順濟良品有限公司</strong></p>
+    <p>匯款完成後，請等待我們的確認通知，謝謝您！</p>
+
+</body>
+</html>
